@@ -1,0 +1,28 @@
+Automatic Type Promotion in Java
+
+Definition: Automatic type promotion in Java occurs when performing operations on mixed data types.
+The Java compiler promotes smaller data types to larger data types to prevent data loss
+and ensure that operations are performed accurately.
+
+Rules for Automatic Type Promotion
+1. Byte, Short, and Char: When a byte, short, or char is used in an arithmetic operation,
+it is automatically promoted to an int before the operation.
+
+2. Mixed Types: If different types of variables are used in an operation, all variables
+are converted to the largest data type used in the operation.
+
+Code Explanation:
+
+Arithmetic Operations:
+1. (floatValue * byteValue): The byte value byteValue is promoted to float because floatValue is a float.
+The result of the multiplication is a float.
+
+2. (intValue / charValue): The char value charValue is promoted to int because intValue is an int.
+The result of the division is an int.
+
+3. (doubleValue * shortValue): The short value shortValue is promoted to double because doubleValue is a double.
+The result of the multiplication is a double.
+
+Type Promotion in Expressions:
+The results of these operations are combined in the final expression. The resulting types are promoted to the
+largest type present in the expression, which is double.

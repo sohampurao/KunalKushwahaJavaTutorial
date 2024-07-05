@@ -1,0 +1,24 @@
+Typecasting in Java
+
+Definition: Typecasting is the process of converting a variable from one data type to another.
+It is necessary when you need to convert a data type with a larger range to a data type
+with a smaller range or vice versa.
+
+There are two types of typecasting in Java:
+1. Implicit Typecasting (Widening Conversion): This happens automatically when converting
+a smaller data type to a larger data type. For example, converting an int to a double.
+
+2.Explicit Typecasting (Narrowing Conversion): This requires explicit conversion when converting
+a larger data type to a smaller data type. For example, converting a double to an int.
+
+Code Example Explanation:
+1. Implicit Typecasting (Widening Conversion):
+In the example, an int variable num is implicitly cast to a double variable doubleNum.
+This is a widening conversion because double has a larger range than int. No special
+syntax is required for this conversion; it happens automatically.
+
+2. Explicit Typecasting (Narrowing Conversion):
+In the example, a double variable decimalNum is explicitly cast to an int variable intNum.
+This is a narrowing conversion because int has a smaller range than double. The explicit
+cast is done using the syntax "(int) decimalNum". This tells the compiler that you are
+intentionally converting the double to an int.
